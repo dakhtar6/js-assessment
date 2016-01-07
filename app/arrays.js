@@ -85,9 +85,9 @@ exports.arraysAnswers = {
 
   concat : function(arr1, arr2) {
 
-    var newArray = arr1.concat(arr2);
+    var concatArray = arr1.concat(arr2);
 
-    return newArray; 
+    return concatArray; 
 
   },
 
@@ -117,6 +117,242 @@ exports.arraysAnswers = {
   },
 
   duplicates : function(arr) {
+    
+    var duplicatesArray = []; 
+
+    //TEST FOR DUPLICATE 1
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 1) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 1) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 2
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 2) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 2) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 3
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 3) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 3) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 4
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 4) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 4) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 5
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 5) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 5) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 6
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 6) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 6) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 7
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 7) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 7) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 8
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 8) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 8) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 9
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 9) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 9) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+
+    //TEST FOR DUPLICATE 0
+    
+    for (var i = 0; i < arr.length; i++) {
+        
+        if (arr[i] === 0) {
+            
+            for (var j = i + 1; j < arr.length; j++) {
+                
+                if (arr[j] === 0) {
+                    
+                    duplicatesArray.push(arr[i]);
+                    console.log(duplicatesArray);
+                    break; 
+                }
+                
+            }
+            
+            break; 
+            
+        }
+        
+    }
+    
+
+    return duplicatesArray; 
+
 
   },
 
