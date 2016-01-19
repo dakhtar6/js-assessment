@@ -117,6 +117,31 @@ exports.arraysAnswers = {
   },
 
   duplicates : function(arr) {
+
+ /*   var duplicatesArray = []; 
+
+    for (var i = 0; i < arr.length; i++) {
+
+        for (var j = i + 1; j < arr.length; j++) {
+
+            if (arr[i] === arr[j]) {
+                duplicatesArray.push(arr[i]); 
+                break; 
+            }
+
+        }
+    
+    }
+
+    return duplicatesArray; */
+
+
+
+    /////////////////////////////////
+
+
+
+    //CHECKS ONLY FOR SINGLE DIGIT DUPLICATES
     
     var duplicatesArray = []; 
 
@@ -131,8 +156,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 1) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -154,8 +179,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 2) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -177,8 +202,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 3) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -200,8 +225,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 4) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -223,8 +248,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 5) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -246,8 +271,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 6) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -269,8 +294,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 7) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -292,8 +317,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 8) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -315,8 +340,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 9) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -338,8 +363,8 @@ exports.arraysAnswers = {
                 if (arr[j] === 0) {
                     
                     duplicatesArray.push(arr[i]);
-                    console.log(duplicatesArray);
                     break; 
+
                 }
                 
             }
@@ -350,17 +375,53 @@ exports.arraysAnswers = {
         
     }
     
-
     return duplicatesArray; 
-
 
   },
 
   square : function(arr) {
 
+    arr.forEach(function(elem, index, theArray) {
+        theArray[index] = elem * elem;
+    });
+
+    return arr; 
+
+    //OPTION TWO - FOR LOOP
+
+    // var squaredArray = []; 
+
+    // for (var i = 0; i < arr.length; i++) {
+    //    squaredArray[i] = arr[i] * arr[i]; 
+    // }
+
+    // return squaredArray; 
+
+    //OPTION THREE - USE MAP METHOD
+
+    //WHY DOES USING MAP NOT WORK? 
+
+    // arr.map(function(number){
+    //     return number * number; 
+    // }); 
+
+    // return arr; 
+
   },
 
   findAllOccurrences : function(arr, target) {
+
+    var occurencesArray = []; 
+
+    for (var i = 0; i < arr.length; i++) {
+
+        if (arr[i] === target) {
+            occurencesArray.push(i);
+        }
+
+    }
+
+    return occurencesArray; 
 
   }
 };
