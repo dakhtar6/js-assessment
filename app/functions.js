@@ -2,7 +2,11 @@ exports = (typeof window === 'undefined') ? global : window;
 
 exports.functionsAnswers = {
   argsAsArray : function(fn, arr) {
+    //OPTION ONE - USE JS SPREAD
+    return fn (...arr);
 
+    //OPTION TWO - USE APPLY METHOD 
+    // return fn.apply(null, arr); 
   },
 
   speak : function(fn, obj) {
