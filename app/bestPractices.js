@@ -17,9 +17,9 @@ exports.bestPracticesAnswers = {
 
   functions : function(flag) {
     if (flag) {
-      function getValue() { return 'a'; }
+      var getValue = function getValue() { return 'a'; }
     } else {
-      function getValue() { return 'b'; }
+      var getValue = function getValue() { return 'b'; }
     }
 
     return getValue();
@@ -30,6 +30,6 @@ exports.bestPracticesAnswers = {
   },
 
   identity : function(val1, val2) {
-
+    return (val1 === val2);
   }
 };
