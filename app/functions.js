@@ -11,13 +11,30 @@ exports.functionsAnswers = {
 
   speak : function(fn, obj) {
 
+    return fn.call(obj);
+
   },
 
   functionFunction : function(str) {
 
+
+
   },
 
   makeClosures : function(arr, fn) {
+
+    // var newMakeClosures = function newMakeClosures () {
+
+    //   var newArr = []; 
+
+    //   arr.forEach(function (num) {
+    //     newArr = newArr.concat(fn(num)); 
+    //   }); 
+
+    //   return newArr; 
+    // }; 
+
+    // return newMakeClosures();
 
   },
 
@@ -26,6 +43,8 @@ exports.functionsAnswers = {
   },
 
   useArguments : function() {
+
+    
 
   },
 
